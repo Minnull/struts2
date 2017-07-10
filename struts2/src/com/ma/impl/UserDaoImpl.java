@@ -27,18 +27,17 @@ public class UserDaoImpl implements UserDao {
 		Connection conn = new jdbc().getConnection();
 		User user = new User();
 		Object[] params = { username };
-	  List<Object> itemList =  jdbc.excuteQuery(sql, params);
-	 
-	  Map<String,Object> users = null;
-	  for(int j=0;j<itemList.size();j++)  
-	  {  
-	      
-	          users= (Map<String, Object>) itemList.get(j);  
-	     
-	  }  
+		List<Object> itemList = jdbc.excuteQuery(sql, params);
+
+		Map<String, Object> users = null;
+		for (int j = 0; j < itemList.size(); j++) {
+
+			users = (Map<String, Object>) itemList.get(j);
+
+		}
 		try {
 			System.out.println("到这里了");
-		user=	 (User) BeanToMapUtil.convertMap(User.class,users);
+			user = (User) BeanToMapUtil.convertMap(User.class, users);
 		} catch (IllegalAccessException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -52,7 +51,7 @@ public class UserDaoImpl implements UserDao {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		    	           
+
 		return user;
 
 	}
