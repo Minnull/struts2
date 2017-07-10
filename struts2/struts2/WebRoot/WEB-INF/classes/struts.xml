@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+ 
+   <package name="default" namespace="/" extends="struts-default">
+   <action name="login" class="com.ma.action.loginaction" >  
+            <result name="success">/jisuanqi2.jsp</result>  
+            <result name="error">/false.jsp</result>  
+        </action>  
+         <action name="jisuanqi" class="com.ma.action.jisuanqi" >  
+            <result name="success">/jisuanqi2.jsp</result>   
+        </action>  
+    </package>
+</struts>
