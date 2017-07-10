@@ -1,9 +1,14 @@
 package com.ma.bean;
 
-public class user {
+public class User {
 	
-    private Integer userID;
-    private String username;
+ 
+	private Integer userID;
+    @Override
+	public String toString() {
+		return "User [userID=" + userID + ", username=" + username + ", userpwd=" + userpwd + "]";
+	}
+	private String username;
     private String userpwd;
 	public Integer getUserID() {
 		return userID;

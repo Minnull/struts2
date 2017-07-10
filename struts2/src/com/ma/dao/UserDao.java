@@ -1,15 +1,15 @@
 package com.ma.dao;
 
-import com.ma.bean.user;
+import com.ma.bean.User;
 
-public interface userdao {
-	public user finduserByAdminname(String username);
+public interface UserDao {
+	public User finduserByAdminname(String username);
 
-	public user findAdminByuserid(Integer userID);
+	public User findAdminByuserid(Integer userID);
 	
-	public void adduser(user user);
+	public void adduser(User user);
 	
-	public void deleteuser(user user);
+	public void deleteuser(User user);
 
-	public Void updateuser(user user);
+	public Void updateuser(User user);
 }

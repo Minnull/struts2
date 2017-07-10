@@ -6,12 +6,10 @@
 <struts>
  
    <package name="default" namespace="/" extends="struts-default">
-   <action name="login" class="com.ma.action.loginaction" >  
-            <result name="success">/jisuanqi2.jsp</result>  
+   <action name="login" class="com.ma.action.LoginAction" >  
+            <result name="success">/success.jsp</result>  
             <result name="error">/false.jsp</result>  
         </action>  
-         <action name="jisuanqi" class="com.ma.action.jisuanqi" >  
-            <result name="success">/jisuanqi2.jsp</result>   
-        </action>  
+        
     </package>
 </struts>
