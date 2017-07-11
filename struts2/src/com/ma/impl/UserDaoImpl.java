@@ -3,17 +3,11 @@ package com.ma.impl;
 import java.beans.IntrospectionException;
 import java.lang.reflect.InvocationTargetException;
 import java.sql.Connection;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 import com.ma.bean.User;
 import com.ma.dao.UserDao;
-import com.sun.glass.ui.CommonDialogs.Type;
-import com.sun.org.apache.xalan.internal.xsltc.compiler.sym;
 
 import util.BeanToMapUtil;
 import util.jdbc;

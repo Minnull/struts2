@@ -3,7 +3,6 @@ package com.ma.action;
 import com.ma.bean.User;
 import com.ma.impl.UserDaoImpl;
 import com.opensymphony.xwork2.ActionSupport;
-import com.sun.org.apache.xalan.internal.xsltc.compiler.sym;
 
 public class LoginAction extends ActionSupport {
 	/**
